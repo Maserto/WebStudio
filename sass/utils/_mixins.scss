@@ -1,0 +1,16 @@
+@mixin value-above($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;  
+    }
+}
+
+@mixin value-below($breakpoint) {
+    @media screen and (max-width: $breakpoint - 1) {
+        @content;  
+    }
+}
+@mixin value-between($breakpoint-before, $breakpoint-after) {
+    @media screen and (min-width: $breakpoint-before) and (max-width: $breakpoint-after - 1) {
+      @content;
+    }
+  }

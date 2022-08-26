@@ -1,0 +1,19 @@
+.our-logo {
+    font-family:$logo-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24); 
+    @include value-above($desktop){
+        font-size: 26px;
+line-height: calc(31/26);
+    }
+  }
+
+  &__logo > span {
+    color:$accent-color;
+  }
+
+ .logo-link {
+    text-decoration: none;
+  } 
