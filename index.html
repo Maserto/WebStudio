@@ -46,13 +46,68 @@
   </li>
     </ul>
     <!-- Header mobile menu -->
-    <button type="button" class="menu__button is-open" data-menu-btn>
+    <button type="button" 
+    class="menu-button is-open"
+    aria-expanded="false"
+            aria-controls="menu"
+            data-menu-btn>
 <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
   <use href="./images/icons.svg#icon-close-pageheader" class="icon-close">></use>
-  <use href="./images/icons.svg#icon-menu--pageheader" class="icon-menu"></use>
+  <use href="./images/icons.svg#icon-menu-pageheader" class="icon-menu"></use>
 </svg>
 
     </button>
+<div class="page-header__socials">
+    <ul class="social">
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="instagram"
+        >Instagram
+  
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://twitter.com/"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="twitter"
+        >Twitter
+ 
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="facebook"
+        >Facebook
+       
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="linkedin"
+        >LinkedIn
+         
+        </a>
+      </li>
+    </ul>
+  </div>
   </div>
     </header> 
     
@@ -69,7 +124,7 @@
 
      
       
-      <!--FEATURES-->
+      <!--BENEFITS-->
       
       <section class="benefits">
         <div class="container">
@@ -407,6 +462,7 @@ name="subscription" id="checkbox-input" required>
       </form>
     </div>  
     </div>
+    <script src="./js/menu.js"></script>
       <script src="./js/modal.js"></script>
   </body>
 

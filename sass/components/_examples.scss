@@ -1,4 +1,7 @@
 .examples {
+  @media screen and (max-width: 1199px) {
+    display: none;
+           }
   
     padding-top: $section-padding;
     padding-bottom:  $section-padding;
@@ -54,4 +57,6 @@
    
        }
 
+        
+      
   }

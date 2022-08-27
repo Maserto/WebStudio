@@ -1,19 +1,22 @@
 .our-logo {
+    display: block;
     font-family:$logo-font;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: calc(28/24); 
+    margin-top: 16px;
+   margin-bottom: 16px;
     @include value-above($desktop){
         font-size: 26px;
 line-height: calc(31/26);
     }
-  }
+  
+}
 
-  &__logo > span {
+   span {
     color:$accent-color;
   }
 
  .logo-link {
-    text-decoration: none;
-  } 
+    text-decoration: none;}

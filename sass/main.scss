@@ -1,12 +1,13 @@
 @import "./utils/variables";
-@import "./utils/visually-hidden";
+@import "./utils/mixins";
+// @import "./utils/visually-hidden";
 @import "./components/common";
 @import "./components/page-header";
 @import "./components/logo";
-@import "./utils/mixins";
+
 // @import "./components/hero";
-// @import "./components/benefits";
-// @import "./components/examples";
+@import "./components/benefits";
+@import "./components/examples";
 // @import "./components/team";
 // @import "./components/social";
 // @import "./components/clients";
@@ -16,5 +17,3 @@
 // @import "./components/form";
 // @import "./components/modal";
 // @import "./components/portfolio";
-
-
