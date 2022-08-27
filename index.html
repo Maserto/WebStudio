@@ -18,13 +18,26 @@
     <header class="page-header"> 
       <div class="container page-header__container">
       <a href="./index.html" class="page-header__logo our-logo logo-link"> <span>Web</span>Studio </a>
+     <!-- MOBILE MENU BUTTON -->
+      <button type="button" 
+    class="menu-button js-open-menu"
+    aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-btn>
+<svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+
+  <use href="./images/icons.svg#icon-menu-pageheader" class="icon-menu"></use>
+</svg>
+    </button>
+
+
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item--active"><a href="./index.html" class="link">Студія</a></li>
           <li class="nav__item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
           <li class="nav__item"><a href="" class="link">Контакти</a></li>
         </ul>    
-    </nav>
+    
     <ul class="page-header__contacts">
       <li class="page-header__mail pointer">
        
@@ -45,19 +58,47 @@
     </a>
   </li>
     </ul>
-    <!-- Header mobile menu -->
-    <button type="button" 
-    class="menu-button is-open"
-    aria-expanded="false"
-            aria-controls="menu"
-            data-menu-btn>
-<svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
-  <use href="./images/icons.svg#icon-close-pageheader" class="icon-close">></use>
-  <use href="./images/icons.svg#icon-menu-pageheader" class="icon-menu"></use>
-</svg>
+  </nav>
+    <!-- MOBILE MENU-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
 
-    </button>
-<div class="page-header__socials">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+          <use href="./images/icons.svg#icon-close-pageheader" class="icon-close">></use>
+          
+        </svg>
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+    <div class="menu__links">
+      <ul class="menu__list">
+        <li class="menu__item--active"><a href="./index.html" class="link">Студія</a></li>
+        <li class="menu__item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li class="menu__item"><a href="" class="link">Контакти</a></li>
+      </ul>    
+  </nav>
+  <ul class="menu__contacts">
+    <li class="menu__mail">
+     
+      <a href="mailto:info@example.com"  class="link link__mail">
+        info@example.com
+    </a>
+    </li>
+    <li class="menu__tel">
+      
+    <a href="tel:+380991111111" class="link link__tel">
+      +38 099 111 11 11
+  </a>
+</li>
+  </ul>
+
+    </div>
+<div class="menu__socials">
     <ul class="social">
       <li class="social__item">
         <a
@@ -108,6 +149,7 @@
       </li>
     </ul>
   </div>
+</div>
   </div>
     </header> 
     
@@ -462,7 +504,13 @@ name="subscription" id="checkbox-input" required>
       </form>
     </div>  
     </div>
-    <script src="./js/menu.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
       <script src="./js/modal.js"></script>
   </body>
 

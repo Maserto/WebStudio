@@ -5,7 +5,10 @@
 
 .page-header__container{
 position: relative;
-
+min-height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
 
 
 @include value-above($tablet){
@@ -17,4 +20,19 @@ position: relative;
     // margin-right: 93px;
     color:$brand-text-color;
   }
+
+  .nav {
+   
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      
+      @media (max-width: 767px) {
+        .nav {
+          display: none;
+        }
+      }
+  
 
