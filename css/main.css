@@ -90,7 +90,7 @@ h1, h2, h3, p {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .nav {
     display: none;
   }
@@ -139,6 +139,11 @@ span {
   background-repeat: no-repeat;
   background-size: 70px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .benefits__item:before {
+    width: 450px;
+  }
 }
 .benefits__item:nth-child(1)::before {
   background-image: url("../images/antenna 1.svg");
