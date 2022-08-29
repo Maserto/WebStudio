@@ -1,18 +1,104 @@
-.menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
 
-    padding-bottom: 48px;
-    padding-left: 40px;
-    z-index: 999;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-    background-color:tomato;
-    
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  z-index: 999;
+  transition: transform 250ms ease-in-out;
+  background-color: $white-text-color;
+  transform: translateX(100%);
 }
-.menu-container .is-open {
-    transform: translateX(0);
+.menu-container.is-open {
+  transform: translateX(0);
 }
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu__list {
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item .link{
+    font-family: $main-font;
+    color: $brand-text-color;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height:calc(47/40);
+letter-spacing: 0.02em;
+
+}
+.menu__item--active .link {
+    font-family: $main-font;
+    color: $accent-color; 
+    font-weight: 500;
+ font-size: 40px;
+ line-height:calc(47/40);
+ letter-spacing: 0.02em;
+ }
+ .menu__item--active , .menu__item:not(:last-child) {
+    margin-bottom: 40px;
+ }
+ 
+ .contacts__wrapper {
+    margin-bottom: auto;
+ }
+ .menu__contacts {
+    padding: 0;
+ }
+ .link__tel {
+    font-family: $main-font;
+    color: $accent-color; 
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height:calc(40/34);
+letter-spacing: 0.02em;
+ }
+ .menu__mail {
+    margin-top: 32px;
+ }
+ .link__mail {
+   color:$secondary-text-color;
+   font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height:calc(28/24);
+letter-spacing: 0.02em;
+ }
+
+ .menu__socials{
+margin-top: 54px;
+ }
+ .social {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+ }
+ .social__item {
+    // display: block;
+    padding-right: 10px;
+ }
+ .social__item:not(:first-child) {
+    padding-left: 10px;
+    border-left: 1px solid $input-border-color;
+
+ }
+ .social__link{
+    text-decoration: none;
+    color: $accent-color;
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.02em;
+ }
