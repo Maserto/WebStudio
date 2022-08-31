@@ -5,6 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
   z-index: 999;
@@ -19,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 302px;
 }
 .menu__list {
     padding: 0;
@@ -48,7 +50,7 @@ letter-spacing: 0.02em;
  }
  
  .contacts__wrapper {
-    margin-bottom: auto;
+
  }
  .menu__contacts {
     padding: 0;

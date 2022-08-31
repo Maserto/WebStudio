@@ -19,7 +19,7 @@
             width: 270px;
 
             @media screen and (max-width: 767px) {
-              width: 100%;
+              width: 450px;
               
             }
             height: 120px;  
@@ -28,7 +28,7 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: 70px;
-          // margin-bottom: 30px; 
+          margin-bottom: 30px; 
         }
         &:nth-child(1)::before {
             background-image: url("../images/antenna\ 1.svg"); 
@@ -52,5 +52,28 @@
     @media screen and (max-width: 767px) {
       .benefits__item:not(:last-child) {
         margin-bottom: 30px;
-      }}
+      }
+      
+    
+    }
+
+    .benefits__title {
+      margin-bottom: 10px;
+      
+        font-size: $basic-font-size;
+      line-height: calc(16/14);
+      letter-spacing: $basic-letter-spacing;
+      text-transform: uppercase;
+      color: $brand-text-color;
+      @media screen and (max-width: 767px) {
+        text-align: center;
+        
+      }
+      }
+      .benefits__text {
+          font-size: $basic-font-size;
+        line-height: calc(24/14);
+        letter-spacing: $basic-letter-spacing;
+        color: $secondary-text-color;}
+      
   
