@@ -1,39 +1,83 @@
 .team {
-  
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width:$desktop) {
     padding-top:  $section-padding;
     padding-bottom:  $section-padding;
+  } 
       background-color:$white-background-color;
       &__title {
         display: flex;
         justify-content: center;
-      
+        font-size: 28px;
+        line-height: calc(33/28);
+
+@media screen and(min-width:$desktop) {
       font-size: 36px;
       line-height: calc(42/36);
-      
+    }
       letter-spacing: $basic-letter-spacing;
       color:$brand-text-color;
       }
       &__list {
         display: flex;
-        margin-top: 50px;
-        margin-left: 0;
-        margin-bottom: 0;
-        justify-content: center;
+        flex-direction: column;
+        gap:$basic-item-gap;
+        // margin-left: 0;
+        // margin-bottom: 0;
+        // justify-content: center;
         padding-left: 0;
+
+        @media screen and(min-width:$desktop) {
+          margin-top: 50px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+        @media screen and (min-width: $tablet) {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+        }
+      
+     
       }
-    }
+
+      
+
+
+      }
+    
     .employee {
+
+    
         margin-right:$basic-item-gap;
-        width: 270px;
+        width: 450px;
       background-color: $white-text-color;
       box-shadow: $shadow;
       border-radius: 0px 0px 4px 4px;
+
+      // @media screen and (min-width: $mobile) {
+      //   width: 450px;
+      // }
+      @media screen and (min-width: $tablet) {
+        width: 354px;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 270px;
+      }
       &:last-child {
         margin-right: 0; 
       }
       &__info {
         padding-top: $basic-item-gap;
-        padding-bottom: $basic-item-gap;
+        padding-bottom: 24px;
+        @media screen and(min-width:$desktop) {
+          padding-bottom: $basic-item-gap;
+        }
+
       }
       &__name {
       display: flex;
