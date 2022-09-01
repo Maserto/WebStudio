@@ -47,7 +47,7 @@
     .employee {
 
     
-        margin-right:$basic-item-gap;
+
         width: 450px;
       background-color: $white-text-color;
       box-shadow: $shadow;
@@ -60,9 +60,6 @@
       @media screen and (min-width: $desktop) {
         width: 270px;
 
-        &:last-child {
-          margin-right: 0; 
-        }
       }
     
       &__info {
@@ -103,10 +100,6 @@
         justify-content:center;
          padding-left:0;
         margin-top: 16px;
-        li {
-          margin-right: $secondary-item-gap;
-          &:last-child {
-            margin-right: 0;
-          }
-        }
+        gap:$secondary-item-gap;
+       
         }
