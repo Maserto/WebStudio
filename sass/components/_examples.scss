@@ -55,8 +55,30 @@
      text-transform: uppercase;
      color:$white-text-color;
    
-       }
-
-        
+       }  
       
+  }
+  .example__table{
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient( $hero-overlay-color,  $hero-overlay-color),
+      url(../images/examples/box_1@2x.jpg);
+  }
+  }
+  .example__app{
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient( $hero-overlay-color,  $hero-overlay-color),
+      url(../images/examples/box_2@2x.jpg);
+  }
+  }
+  .example__work{
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient( $hero-overlay-color,  $hero-overlay-color),
+      url(../images/examples/box_3@2x.jpg);
+  }
   }

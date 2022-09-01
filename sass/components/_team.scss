@@ -21,33 +21,27 @@
       color:$brand-text-color;
       }
       &__list {
+        margin-top: $basic-item-gap;
         display: flex;
         flex-direction: column;
         gap:$basic-item-gap;
-        // margin-left: 0;
-        // margin-bottom: 0;
-        // justify-content: center;
+        margin-left: 0;
+        margin-bottom: 0;
+        justify-content: center;
         padding-left: 0;
 
         @media screen and(min-width:$desktop) {
           margin-top: 50px;
           display: flex;
           flex-direction: row;
-          justify-content: center;
+         
         }
         @media screen and (min-width: $tablet) {
           display: flex;
           flex-wrap: wrap;
           flex-direction: row;
-          justify-content: center;
         }
-      
-     
       }
-
-      
-
-
       }
     
     .employee {
@@ -59,18 +53,18 @@
       box-shadow: $shadow;
       border-radius: 0px 0px 4px 4px;
 
-      // @media screen and (min-width: $mobile) {
-      //   width: 450px;
-      // }
+ 
       @media screen and (min-width: $tablet) {
         width: 354px;
       }
       @media screen and (min-width: $desktop) {
         width: 270px;
+
+        &:last-child {
+          margin-right: 0; 
+        }
       }
-      &:last-child {
-        margin-right: 0; 
-      }
+    
       &__info {
         padding-top: $basic-item-gap;
         padding-bottom: 24px;
