@@ -40,8 +40,12 @@
 
 
     @media screen and (min-width: $mobile) {
-      max-width: 450px;
+      width: 450px;
         height: 609px;
     }
 
+    @media screen and (min-width: $desktop) {
+      height: 581px;
+      width: 528px;
   }
+}

@@ -11,6 +11,10 @@ li {
         margin: 0;
         padding: 0;
       } 
+      ul {
+        margin: 0;
+        padding: 0;
+      }
 
       
     .link {
@@ -26,7 +30,7 @@ li {
       } 
       
       .container {
-    width: 100%;
+
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
@@ -34,19 +38,19 @@ li {
 
         
 @media screen and (min-width: 480px) {
-  .container {
+  
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-  }
+ 
 }
 @media screen and (min-width: 768px) {
-  .container {
+ 
     max-width: 768px;
-  }
+  
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  
     max-width: 1200px;
-  }}}
+  }}
       

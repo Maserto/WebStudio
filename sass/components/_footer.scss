@@ -1,0 +1,134 @@
+.basement {
+  
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-background-color;
+    &__logo {
+        color: $white-text-color; 
+      }
+      &__adress {
+        margin-bottom: 0;
+        
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: $basic-letter-spacing;
+        color: $white-text-color}
+        &__contacts , &__items {
+            margin-top: 9px;
+          
+          padding-left: 0;
+          margin-bottom: 0;
+          }
+          &__item {
+            margin-top: 9px;
+            &:nth-child(1){
+                margin-top: 0;
+              }
+          }
+          &__mail, &__tel {
+            font-style: normal;
+            font-size: $basic-font-size;
+            line-height: 24px;
+            color: $footer-text-color;
+            } 
+            &__slogan {
+                font-weight: 700;
+                font-size: $basic-font-size;
+                line-height: calc(16/14);
+                letter-spacing: $basic-letter-spacing;
+                text-transform: uppercase;
+                color: $white-text-color;
+              
+              }  
+    }
+
+    .basement__items{
+      @media screen and (min-width: $tablet) and 
+      (max-width: 1199px) {
+        margin-bottom: 60px;
+        width: 50%;
+    
+      }
+      @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+      }
+    }
+    .icon-social__list {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 60px;
+      @media screen and (min-width: $desktop) {
+        justify-content: start;
+      }
+    }
+    address {
+        margin-top: 20px;
+      }
+    .basement-container {
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+      }
+    
+      @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: start;
+        align-items:baseline
+      }
+
+
+        // display: flex;
+        // align-items:baseline; 
+      }
+      .basement-socials {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 20px;
+        margin-bottom: 0;
+        gap:$secondary-item-gap; 
+
+        @media screen and (min-width:$desktop){
+          justify-content: start;
+        }
+      }
+      .basement__elements {
+   
+        justify-content:center;
+        @media screen and (min-width: $mobile) {
+          margin-top: 60px;
+          margin-bottom: 60px;
+
+        }
+
+
+        @media screen and (min-width: $tablet) {
+          width: 50%;
+
+        }
+        @media screen and (min-width: $desktop) {
+          justify-content: start;
+          margin-top: 0;
+          margin-left: 70px;
+          margin-right: 93px;
+          margin-bottom: 0;
+        }
+    
+      }
+      span  {color:$accent-color;}
+
+    

@@ -46,9 +46,16 @@
   
       &__item {
         display: flex;
-        width: 170px; 
+        width:210px;
        height: 92px;
       
+@media screen and (min-width: $tablet) {
+  width:226px;
+}
+@media screen and (min-width: $desktop) {
+  width: 170px; 
+}
+
       border: 1px solid $link-icon-color;
       border-radius: $common-border-radius;
       justify-content: center;

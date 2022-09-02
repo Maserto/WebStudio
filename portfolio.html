@@ -2,50 +2,164 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"> 
-<title> preprocessor SASS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <title> preprocessor SASS</title>
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
   </head>
-  
-    <body>
-      <header class="page-header"> 
-        <div class="container page-header__container">
-        <a href="./index.html" class="page-header__logo our-logo logo-link"> <span>Web</span>Studio </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="nav__item--active"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li class="nav__item"><a href="" class="link">Контакти</a></li>
-          </ul>    
-      </nav>
-      <ul class="page-header__contacts">
-        <li class="page-header__mail pointer">
-         
-          <a href="mailto:info@example.com"  class="link page-header__link pointer">
-            <svg class="page-header__icon" width="16px" height="12px">
-            <use href="./images/icons.svg#icon-mail">
-            </use>
-          </svg> info@example.com
-        </a>
-        </li>
-        <li class="page-header__tel pointer">
-          
-        <a href="tel:+380991111111" class="link page-header__link pointer">
-          <svg class="page-header__icon" width="10px" height="16px">
-          <use href="./images/icons.svg#icon-telefon">
+
+  <body>
+    
+    <header class="page-header"> 
+      <div class="container page-header__container">
+      <a href="./index.html" class="page-header__logo our-logo logo-link"> <span>Web</span>Studio </a>
+     <!-- MOBILE MENU BUTTON -->
+
+      <button type="button" 
+    class="menu-toggle js-open-menu"
+    aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-btn>
+<svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+
+  <use href="./images/icons.svg#icon-menu-pageheader" class="icon-menu"></use>
+</svg>
+    </button>
+
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="./index.html" class="link">Студія</a></li>
+          <li class="nav__item--active"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+          <li class="nav__item"><a href="" class="link">Контакти</a></li>
+        </ul>   </nav>   
+    
+    <ul class="page-header__contacts">
+      <li class="page-header__mail pointer">
+       
+        <a href="mailto:info@example.com"  class="link page-header__link pointer">
+          <svg class="page-header__icon" width="16px" height="12px">
+          <use href="./images/icons.svg#icon-mail">
           </use>
-        </svg> +38 099 111 11 11
+        </svg> info@example.com
       </a>
-    </li>
-      </ul>
+      </li>
+      
+      <li class="page-header__tel pointer">
+        
+      <a href="tel:+380991111111" class="link page-header__link pointer">
+        <svg class="page-header__icon" width="10px" height="16px">
+        <use href="./images/icons.svg#icon-telefon">
+        </use>
+      </svg> +38 099 111 11 11
+    </a>
+  </li>
+    </ul>
+
+    <!-- MOBILE MENU-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+
+      <button class="mobile-menu__close-button menu-toggle js-close-menu">
+        <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+          <use href="./images/icons.svg#icon-close-pageheader" class="icon-close">></use>
+        </svg>
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      
+    <div class="menu__links">
+      <div class="links__wrapper">
+      <ul class="menu__list">
+        <li class="menu__item--active"><a href="./index.html" class="link">Студія</a></li>
+        <li class="menu__item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li class="menu__item"><a href="" class="link">Контакти</a></li>
+      </ul>    
     </div>
-      </header> 
+    
+    <div class="contacts__wrapper">
+      <ul class="menu__contacts">
+    <li class="menu__tel">
+      
+    <a href="tel:+380991111111" class="link link__tel">
+      +38 099 111 11 11
+  </a>
+</li>
+<li class="menu__mail">
+     
+  <a href="mailto:info@example.com"  class="link link__mail">
+    info@example.com
+</a>
+</li>
+  </ul>
+</div>
+</div>
+
+
+<div class="menu__socials">
+    <ul class="social">
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="instagram"
+        >Instagram
+  
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://twitter.com/"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="twitter"
+        >Twitter
+ 
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="facebook"
+        >Facebook
+       
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a
+          class="social__link"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="nofollow noreferrer"
+          aria-label="linkedin"
+        >LinkedIn
+         
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+    </header> 
  <main>
   <!-- PORTFOLIO -->
         <section class="portfolio">
@@ -58,92 +172,273 @@
                 <li class="search__item"><button class="search__button pointer" type="button">Дизайн</button></li>
                 <li class="search__item"><button class="search__button pointer" type="button">Маркетинг</button></li>
               </ul>      
-<ul class="portfolio-list">
-  
-    <li class="portfolio__item"><a class="link portfolio__link" href=""> 
-      <div class="portfolio__container">
-      <img src="./images/port01.jpg" alt="экран с загруженным сайтом" width="370">
-      <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="portfolio-list__container">
-      <h2 class="portfolio__title">Технокряк</h2>
-      <p class="portfolio__text">Веб-сайт</p></div></a>
-    </li>
-    <li class="portfolio__item"><a class="link portfolio__link" href="">
-      <div class="portfolio__container">
-      <img src="./images/port02.jpg" alt="баскетболисты" width="370">
-      <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="portfolio-list__container">
-      <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
-      <p class="portfolio__text">Дизайн</p></div></a>
-    </li>
-    <li class="portfolio__item"><a class="link portfolio__link" href="">
-      <div class="portfolio__container">
-      <img src="./images/port03.jpg" alt="логотип" width="370">
-      <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="portfolio-list__container">
-      <h2 class="portfolio__title">Ресторан Seafood</h2>
-      <p class="portfolio__text">Додаток</p></div></a>
-    </li>
-    <li class="portfolio__item"><a class="link portfolio__link" href="">
-      <div class="portfolio__container">
-      <img src="./images/port04.jpg" alt="наушники" width="370">
-      <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="portfolio-list__container">
-      <h2 class="portfolio__title">Проєкт Prime</h2>
-      <p class="portfolio__text">Маркетинг</p></div></a>
-    </li>
-    <li class="portfolio__item"><a class="link portfolio__link" href="">
-      <div class="portfolio__container">
-      <img src="./images/port05.jpg" alt="коробки" width="370">
-      <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="portfolio-list__container">
-      <h2 class="portfolio__title">Проєкт Boxes</h2>
-      <p class="portfolio__text">Додаток</p></div></a>
-    </li>
-    <li class="portfolio__item"><a class="link portfolio__link" href="">
-      <div class="portfolio__container">
-      <img src="./images/port06.jpg" alt="страница сайта" width="370">
-      <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="portfolio-list__container">
-      <h2 class="portfolio__title">Inspiration has no Borders</h2>
-      <p class="portfolio__text">Веб-сайт</p></div></a>
-    </li>
-    <li class="portfolio__item"><a class="link portfolio__link" href="">
-      <div class="portfolio__container">
-      <img src="./images/port07.jpg" alt="журнал" width="370">
-      <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="portfolio-list__container">
-      <h2 class="portfolio__title">Видання Limited Edition</h2>
-      <p class="portfolio__text">Дизайн</p></div></a>
-    </li>
-    <li class="portfolio__item"><a class="link portfolio__link" href="">
-      <div class="portfolio__container">
-      <img src="./images/port08.jpg" alt="ярлык с буквами" width="370">
-      <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-    <div class="portfolio-list__container">
-      <h2 class="portfolio__title">Проєкт LAB</h2>
-      <p class="portfolio__text">Маркетинг</p></div></a>
-    </li>
-    <li class="portfolio__item"><a class="link portfolio__link" href="">
-      <div class="portfolio__container">
-      <img src="./images/port09.jpg" alt="разработчик за ноутбуком" width="370">
-      <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-    </div>
-      <div class="portfolio-list__container">
-        <h2 class="portfolio__title">Growing Business</h2>
-        <p class="portfolio__text">Додаток</p></div></a>
-      </li>
-    </ul>
-  </div>
-        </section>     
+              <ul class="portfolio__list">
+                <li class="portfolio__item">
+                  <a href="@" class="link portfolio__link">
+                    <div class="portfolio__container">
+                      <picture>
+                                <source type="image/jpeg" 
+                                media="(max-width: 767px)" 
+                                sizes="(min-width: 320px) 320px,90vw"
+                                    srcset="./images/portfolio/mobile/notebook-first-450.jpg 450w,
+                                ./images/portfolio/mobile/notebook-first-900.jpg 900w" />
+              
+                                <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                    sizes="(min-width: 354px) 354px, 50vw" 
+                                    srcset="./images/portfolio/tablet/notebook-first-354.jpg 345w,
+                                ./images/portfolio/tablet/notebook-first-708.jpg 708w" />
+              
+                                <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                    srcset="./images/portfolio/desktop/notebook-first-370.jpg 370w,
+                                ./images/portfolio/desktop/notebook-first-740.jpg 740w " />
+                      <img src="./images/portfolio/img1.jpg" alt="Веб-сайт" width="370" height="296" />
+                      </picture>
+                      <p class="portfolio__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      </p>
+                    </div>
+              
+                    <div class="portfolio-list__container">
+                      <h2 class="portfolio__title">Технокряк</h2>
+                      <p class="portfolio__text">Веб-сайт</p>
+                    </div>
+                  </a>
+                </li>
+              
+                <li class="portfolio__item">
+                  <a href="@" class="portfolio__link">
+                    <div class="portfolio__container">
+                      <picture>
+                                <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
+                                    srcset="./images/portfolio/mobile/nba-450.jpg 450w,
+                                ./images/portfolio/mobile/nba-900.jpg 900w" />
+              
+                                <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                    sizes="(min-width: 354px) 354px, 50vw" 
+                                    srcset="./images/portfolio/tablet/nba-354.jpg 354w,
+                                ./images/portfolio/tablet/nba-708.jpg 708w" />
+              
+                                <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                    srcset="./images/portfolio/desktop/nba-370.jpg 370w,
+                                ./images/portfolio/desktop/nba-740.jpg 740w" />
+                      <img src="./images/portfolio/img2.jpg" alt="Плакат" width="370" />
+                      </picture>
+              
+                      <p class="portfolio__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      </p>
+                    </div>
+                    <div class="portfolio-list__container">
+                      <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                      <p class="portfolio__text">Дизайн</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="portfolio__item">
+                  <a href="@" class="portfolio__link">
+                    <div class="portfolio__container">
+                      <picture>
+                                <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
+                                    srcset="./images/portfolio/mobile/seafood-450.jpg 450w,
+                                ./images/portfolio/mobile/seafood-900.jpg 900w" />
+              
+                                <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                    sizes="(min-width: 354px) 354px, 50vw" 
+                                    srcset="./images/portfolio/tablet/seafood-354.jpg 354w,
+                                ./images/portfolio/tablet/seafood-708.jpg 708w" />
+              
+                                <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                    srcset="./images/portfolio/desktop/seafood-370.jpg 370w,
+                                ./images/portfolio/desktop/seafood-740.jpg 740w" />
+                      <img src="./images/portfolio/img3.jpg" alt="Застосунок" width="370" />
+                      </picture>
+              
+                      <p class="portfolio__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      </p>
+                    </div>
+                    <div class="portfolio-list__container">
+                      <h2 class="portfolio__title">Ресторан Seafood</h2>
+                      <p class="portfolio__text">Додаток</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="portfolio__item">
+                  <a href="@" class="portfolio__link">
+                    <div class="portfolio__container">
+                      <picture>
+                                <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
+                                    srcset="./images/portfolio/mobile/headphones-450.jpg 450w,
+                                ./images/portfolio/mobile/headphones-900.jpg 900w" />
+              
+                                <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                    sizes="(min-width: 354px) 354px, 50vw" 
+                                    srcset="./images/portfolio/tablet/headphones-354.jpg 354w,
+                                ./images/portfolio/tablet/headphones-708.jpg 708w" />
+              
+                                <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                    srcset="./images/portfolio/desktop/headphones-370.jpg 370w,
+                                ./images/portfolio/desktop/headphones-740.jpg 740w" />
+                      <img src="./images/portfolio/img4.jpg" alt="Маркетинг" width="370" />
+                      </picture>
+                      <p class="portfolio__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      </p>
+                    </div>
+                    <div class="portfolio-list__container">
+                      <h2 class="portfolio__title">Проект Prime</h2>
+                      <p class="portfolio__text">Маркетинг</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="portfolio__item">
+                  <a href="@" class="portfolio__link">
+                    <div class="portfolio__container">
+                       <picture>
+                                <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
+                                    srcset="./images/portfolio/mobile/boxes-450.jpg 450w,
+                                ./images/portfolio/mobile/boxes-900.jpg 900w" />
+              
+                                <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                    sizes="(min-width: 354px) 354px, 50vw" 
+                                    srcset="./images/portfolio/tablet/boxes-354.jpg 354w,
+                                ./images/portfolio/tablet/boxes-708.jpg 708w" />
+              
+                                <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                    srcset="./images/portfolio/desktop/boxes-370.jpg 370w,
+                                ./images/portfolio/desktop/boxes-740.jpg 740w" />
+                      <img src="./images/portfolio/img5.jpg" alt="Застосунок" width="370" />
+                       </picture>
+                      <p class="portfolio__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      </p>
+                    </div>
+                    <div class="portfolio-list__container">
+                      <h2 class="portfolio__title">Проект Boxes</h2>
+                      <p class="portfolio__text">Приложение</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="portfolio__item">
+                  <a href="@" class="portfolio__link">
+                    <div class="portfolio__container">
+                      <picture>
+                                <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
+                                    srcset="./images/portfolio/mobile/imac-450.jpg 450w,
+                                ./images/portfolio/mobile/imac-900.jpg 900w" />
+              
+                                <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                    sizes="(min-width: 354px) 354px, 50vw" 
+                                    srcset="./images/portfolio/tablet/imac-354.jpg 354w,
+                                ./images/portfolio/tablet/imac-708.jpg 708w" />
+              
+                                <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                    srcset="./images/portfolio/desktop/imac-370.jpg 370w,
+                                ./images/portfolio/desktop/imac-740.jpg 740w" />
+                      <img src="./images/portfolio/img6.jpg" alt="Веб-сайт" width="370" />
+                      </picture>
+                      <p class="portfolio__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      </p>
+                    </div>
+                    <div class="portfolio-list__container">
+                      <h2 class="portfolio__title">Inspiration has no Borders</h2>
+                      <p class="portfolio__text">Веб-сайт</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="portfolio__item">
+                  <a href="@" class="portfolio__link">
+                    <div class="portfolio__container">
+                      <picture>
+                                <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
+                                    srcset="./images/portfolio/mobile/magazine-450.jpg 450w,
+                                ./images/portfolio/mobile/magazine-900.jpg 900w" />
+              
+                                <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                    sizes="(min-width: 354px) 354px, 50vw" 
+                                    srcset="./images/portfolio/tablet/magazine-354.jpg 354w,
+                                ./images/portfolio/tablet/magazine-708.jpg 708" />
+              
+                                <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                    srcset="./images/portfolio/desktop/magazine-370.jpg 370w,
+                                ./images/portfolio/desktop/magazine-740.jpg 740w" />
+                      <img src="./images/portfolio/img7.jpg" alt="Дизайн" width="370" />
+                              </picture>
+              
+                      
+                      <p class="portfolio__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      </p>
+                    </div>
+                    <div class="portfolio-list__container">
+                      <h2 class="portfolio__title">Видання Limited Edition</h2>
+                      <p class="portfolio__text">Дизайн</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="portfolio__item">
+                  <a href="@" class="portfolio__link">
+                    <div class="portfolio__container">
+              
+                      <picture>
+                                <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
+                                    srcset="./images/portfolio/mobile/label-450.jpg 450w,
+                                ./images/portfolio/mobile/label-900.jpg 900w" />
+              
+                                <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                    sizes="(min-width: 354px) 354px, 50vw" 
+                                    srcset="./images/portfolio/tablet/label-354.jpg 354w,
+                                ./images/portfolio/tablet/label-708.jpg 708w" />
+              
+                                <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                    srcset="./images/portfolio/desktop/label-370.jpg 370w,
+                                ./images/portfolio/desktop/label-740.jpg 740w" />
+                      <img src="./images/portfolio/img8.jpg" alt="Маркетинг" width="370" />
+                      </picture>
+                      <p class="portfolio__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      </p>
+                    </div>
+                    <div class="portfolio-list__container">
+                      <h2 class="portfolio__title">Проект LAB</h2>
+                      <p class="portfolio__text">Маркетинг</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="portfolio__item">
+                  <a href="@" class="portfolio__link">
+                    <div class="portfolio__container">
+                      <picture>
+                                <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
+                                    srcset="./images/portfolio/mobile/notebook-second-450.jpg 450w,
+                                ./images/portfolio/mobile/notebook-second-900.jpg 900w" />
+              
+                                <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                    sizes="(min-width: 354px) 354px, 50vw" 
+                                    srcset="./images/portfolio/tablet/notebook-second-354.jpg 354w,
+                                ./images/portfolio/tablet/notebook-second-708.jpg 708w" />
+              
+                                <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                    srcset="./images/portfolio/desktop/notebook-second-370.jpg 370w,
+                                ./images/portfolio/desktop/notebook-second-740.jpg 740w" />
+                      <img src="./images/portfolio/img9.jpg" alt="Застосунок" width="370" />
+              
+                      </picture>
+              
+                      <p class="portfolio__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      </p>
+                    </div>
+                    <div class="portfolio-list__container">
+                      <h2 class="portfolio__title">Growing Business</h2>
+                      <p class="portfolio__text">Додаток</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              </div>
+              </section>    
     </main>  
 
     <!-- FOOTER  -->
@@ -194,6 +489,7 @@
 
   </div>
       </footer>
+      <script defer src="js/mobile-menu.js"></script>
       <script src="./js/modal.js"></script>
     </body>
   
