@@ -87,10 +87,12 @@
         padding-bottom: 63px;
         padding-left: 24px;
       
-        font-size: 18px;
+        font-size: 14px;
       line-height:calc(28/18);
       letter-spacing: $basic-letter-spacing;
-      
+       @media screen and (min-width:$desktop) {
+        font-size: 18px;
+       }
       
       }  
     } 
