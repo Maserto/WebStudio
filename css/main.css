@@ -1408,11 +1408,19 @@ textarea {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 1199px) {
   .checkbox__text {
     font-size: 12px;
     line-height: 1.1666666667;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .checkbox__text span {
@@ -1520,7 +1528,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .modal {
     height: 581px;
-    width: 528px;
+    min-width: 528px;
   }
 }
 

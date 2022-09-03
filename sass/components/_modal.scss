@@ -46,6 +46,6 @@
 
     @media screen and (min-width: $desktop) {
       height: 581px;
-      width: 528px;
+      min-width: 528px;
   }
 }
