@@ -1,7 +1,7 @@
 .hero { 
     background-color:$hero-background-color;
     text-align: center;
-    max-width: $mobile;
+    // max-width: $mobile;
     padding-top: 118px;
     padding-bottom: 118px;
     min-height: 400px;
@@ -38,7 +38,7 @@
 
       @include value-above($tablet) {
  
-    max-width: $tablet;
+    // max-width: $tablet;
         background-image: linear-gradient($hero-overlay-color,  $hero-overlay-color),
           url(../images/background/background-tab.jpg);
     
