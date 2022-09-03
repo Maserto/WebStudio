@@ -4,7 +4,11 @@
     padding-bottom: 60px;
     background-color: $footer-background-color;
     &__logo {
-        color: $white-text-color; 
+        color: $white-text-color;
+        @media screen and (min-width:$desktop){
+          margin-right: 156px; 
+        } 
+
       }
       &__adress {
         margin-bottom: 0;
@@ -52,7 +56,7 @@
     
       }
       @media screen and (min-width: $desktop) {
-        margin-right: 70px;
+        // margin-right: 70px;
       }
     }
     .icon-social__list {
