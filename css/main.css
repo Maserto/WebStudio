@@ -1015,7 +1015,6 @@ span {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-right: 12px;
     gap: 0;
   }
 }
