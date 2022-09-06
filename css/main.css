@@ -1689,10 +1689,10 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  height: 100hv;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 5px;
   z-index: 999;
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
@@ -1701,6 +1701,13 @@ textarea {
   background-color: rgb(255, 255, 255);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+}
+@media screen and (min-width: 480px) {
+  .menu-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+  }
 }
 
 .menu-container.is-open {
@@ -1732,9 +1739,14 @@ textarea {
   color: rgb(33, 33, 33);
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
+  font-size: 20px;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 480px) {
+  .menu__item .link {
+    font-size: 40px;
+    line-height: 1.175;
+  }
 }
 
 .menu__item--active .link {
@@ -1759,9 +1771,14 @@ textarea {
   color: rgb(33, 150, 243);
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 20px;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 480px) {
+  .link__tel {
+    font-size: 34px;
+    line-height: 1.1764705882;
+  }
 }
 
 .menu__mail {
@@ -1772,9 +1789,14 @@ textarea {
   color: rgb(117, 117, 117);
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.1666666667;
+  font-size: 14px;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 480px) {
+  .link__mail {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
 }
 
 .menu__socials {
@@ -1814,4 +1836,9 @@ textarea {
   font-size: 15px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 480px) {
+  .social__link {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */
