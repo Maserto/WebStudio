@@ -122,14 +122,14 @@
         }
 
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $tablet) and (max-width: $desktop) {
           width: 50%;
 
         }
         @media screen and (min-width: $desktop) {
           justify-content: start;
           margin-top: 0;
-          // margin-left: 70px;
+          margin-left: 70px;
           margin-right: 93px;
           margin-bottom: 0;
           margin-left: 70px;
