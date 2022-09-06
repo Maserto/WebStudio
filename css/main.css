@@ -817,11 +817,6 @@ span {
 .basement__logo {
   color: rgb(255, 255, 255);
 }
-@media screen and (min-width: 1200px) {
-  .basement__logo {
-    margin-right: 156px;
-  }
-}
 .basement__adress {
   margin-bottom: 0;
   font-style: normal;
@@ -831,7 +826,7 @@ span {
   letter-spacing: 0.03em;
   color: rgb(255, 255, 255);
 }
-.basement__contacts, .basement__items {
+.basement__contacts {
   margin-top: 9px;
   padding-left: 0;
   margin-bottom: 0;
@@ -983,6 +978,7 @@ address {
     margin-top: 0;
     margin-right: 93px;
     margin-bottom: 0;
+    margin-left: 70px;
   }
 }
 

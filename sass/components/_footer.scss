@@ -6,7 +6,7 @@
     &__logo {
         color: $white-text-color;
         @media screen and (min-width:$desktop){
-          margin-right: 156px; 
+          // margin-right: 156px; 
         } 
 
       }
@@ -19,7 +19,9 @@
         line-height: calc(24/14);
         letter-spacing: $basic-letter-spacing;
         color: $white-text-color}
-        &__contacts , &__items {
+        &__contacts 
+        // , &__items 
+        {
             margin-top: 9px;
           
           padding-left: 0;
@@ -130,6 +132,7 @@
           // margin-left: 70px;
           margin-right: 93px;
           margin-bottom: 0;
+          margin-left: 70px;
         }
     
       }
