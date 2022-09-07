@@ -1147,7 +1147,7 @@ span {
 
 .close-button {
   position: absolute;
-  top: 8px;
+  top: 40px;
   right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1161,6 +1161,11 @@ span {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.1);
   background-color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 480px) {
+  .close-button {
+    top: 8px;
+  }
 }
 .close-button__icon {
   fill: rgb(0, 0, 0);
@@ -1375,9 +1380,6 @@ textarea {
 
 .checkbox__container {
   margin-top: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .checkbox__container input[type=checkbox] {
   width: 16px;
@@ -1393,18 +1395,23 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .checkbox__text {
+    font-size: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (max-width: 1199px) {
   .checkbox__text {

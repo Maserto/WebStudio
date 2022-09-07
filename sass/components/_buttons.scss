@@ -69,7 +69,12 @@
 
   .close-button {
     position: absolute;
-  top: 8px;
+    top:40px;
+
+
+  @media screen and (min-width:$mobile) {
+    top: 8px;
+  }
   right: 8px;
   display: flex;
     align-items: center;

@@ -531,16 +531,21 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">    
-        <button class="close-button" data-modal-close>
+        <!-- <button class="close-button" data-modal-close>
           <svg class="close-button__icon" width="18px" height="18px">
           <use href="./images/icons.svg#icon-close"></use>
         </svg> 
-      </button>
+      </button> -->
       
 	<!--FORM-->
       <form name="feedback" autocomplete="on" class="feedback">
       <p class="feedback__slogan">Залиште свої дані, ми вам передзвонимо
       </p>
+      <button class="close-button" data-modal-close>
+        <svg class="close-button__icon" width="18px" height="18px">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg> 
+    </button>
       
         <div class="feedback__item">
       <label class="feedback-input__label" for="form-name" >Ім'я</label>
