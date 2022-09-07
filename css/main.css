@@ -1147,7 +1147,7 @@ span {
 
 .close-button {
   position: absolute;
-  top: 40px;
+  top: 8px;
   right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1512,7 +1512,7 @@ textarea {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   padding: 40px;
   top: 50%;
   left: 50%;
